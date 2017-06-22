@@ -5,6 +5,7 @@ package com.rjstudio.customsviewdemo;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bu_slideMenu.setOnClickListener(this);
         bu_Spinner.setOnClickListener(this);
         bu_slideDelete.setOnClickListener(this);
+
+
+
     }
 
     @Override
@@ -43,12 +48,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.bu_YK:
+                Toast.makeText(this, "YoukuMenu", Toast.LENGTH_SHORT).show();
+                Intent intent1 = new Intent(this,YouKuMenu.class);
+                startActivity(intent1);
                 break;
             case R.id.bu_SlideMenu:
                 break;
             case R.id.bu_SlideDelete:
                 break;
             case R.id.bu_Spinner:
+                Intent intent5 = new Intent(this,SpinnerDemo.class);
+                startActivity(intent5);
                 break;
             case R.id.bu_SlideButton:
                 break;
