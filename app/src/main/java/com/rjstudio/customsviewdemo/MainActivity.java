@@ -5,7 +5,6 @@ package com.rjstudio.customsviewdemo;
 
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -53,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
             case R.id.bu_SlideMenu:
+                Intent intent3 = new Intent(this,SlideMenuDemo.class);
+                startActivity(intent3);
                 break;
             case R.id.bu_SlideDelete:
                 break;
@@ -61,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent5);
                 break;
             case R.id.bu_SlideButton:
+                Intent intent2 = new Intent(this,ToggleButtonDemo.class);
+                startActivity(intent2);
                 break;
         }
     }

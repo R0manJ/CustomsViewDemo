@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.rjstudio.customsviewdemo.CusView.SliedMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slideMenu">
+
+        <include layout="@layout/slide_menu_left"/>
+        <include layout="@layout/slide_menu_right"/>
+
+
+
+        </com.rjstudio.customsviewdemo.CusView.SliedMenu>
+
+</LinearLayout>

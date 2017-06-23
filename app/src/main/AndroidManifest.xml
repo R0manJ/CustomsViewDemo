@@ -19,6 +19,8 @@
         <activity android:name=".AdvertisementDemo" />
         <activity android:name=".YouKuMenu" />
         <activity android:name=".SpinnerDemo" />
+        <activity android:name=".ToggleButtonDemo" />
+        <activity android:name=".SlideMenuDemo"></activity>
     </application>
 
 </manifest>
