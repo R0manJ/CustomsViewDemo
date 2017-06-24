@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bu_Spinner.setOnClickListener(this);
         bu_slideDelete.setOnClickListener(this);
 
-
+//Test 2017-6-24
 
     }
 
